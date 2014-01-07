@@ -35,9 +35,16 @@
           <version>2.2</version>
         </plugin>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-pmd-plugin</artifactId>
-        <version>3.0.1</version>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-pmd-plugin</artifactId>
+            <version>2.7.1</version>
+            <configuration>
+                <linkXRef>false</linkXRef>
+                <targetJdk>1.6</targetJdk>
+                <rulesets>
+                    <ruleset>/rulesets/basic.xml</ruleset>
+                </rulesets>
+            </configuration>
       </plugin>
       <plugin>
      	 <groupId>com.soebes.maven.plugins.dmg</groupId>
